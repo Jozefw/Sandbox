@@ -12,6 +12,11 @@ var $tableTemplate = $("#tableTemplate"),
 $tableTemplate.hide();
 $nextMove.hide();
 
+var newGame = function() {
+
+};
+
+
 function displayPrevGame() {
 	$tableTemplate.show().appendTo(".prerecorded");
 	$nextMove.show().appendTo('.prerecorded');

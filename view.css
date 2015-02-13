@@ -1,0 +1,31 @@
+.container {
+	margin: 20px;
+}
+
+.row{
+	margin: 20px;
+}
+
+td {
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+}
+
+#nextMove{
+  border: 1px solid blue;
+  height: 30px;
+  width: 75px;
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 5px;
+}
+
+#liveGame{
+  border: 1px solid blue;
+  height: 30px;
+  width: 75px;
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 5px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link href='http://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="view.css">
+</head>
+<body>
+
+	<div class="container lists" >
+		<div class="row">
+
+			<div class="col-sm-3" id="newGame">New Game
+				<p><button type="button">Start Game</button></p>
+			</div>
+
+			<div class="col-sm-3" id="reset">Reset Game
+				<p><button type="button">Reset</button></p>
+			</div>
+
+			<div class="col-sm-3 previous">Previous Games
+				<p><select id="gameSelect">
+          <option disabled>Please select a Game Date</option> 
+        </select></p>
+      </div>
+      
+			<div class="col-sm-3">Live Game
+				<p><button type="button">Live Game</button></p>
+			</div>
+	  </div>
+	</div>
+
+	<div class="container displays">
+		<div class="row">
+			<div class="col-md-12">Previous Games</div>
+		</div>
+		<div class="row prerecorded">
+			
+	  </div>
+
+	  <div class="row">
+			<div class="col-md-12">Live Game</div>	
+		</div>
+
+		<div class="row">
+
+	</div>
+
+		
+				
+		</div>
+	</div>
+				<table id="tableTemplate">
+					<div class="ttt">
+            <tr>
+                <td id = "0" span id="display0"></td>
+                <td id = "1" span id="display1"></td>
+                <td id = "2" span id="display2"></td>
+            </tr>
+            <tr>
+                <td id = "3" span id="display3"></td>
+                <td id = "4" span id="display4"></td>
+                <td id = "5" span id="display5"></td>
+            </tr>
+            <tr>
+                <td id = "6" span id="display6"></td>
+                <td id = "7" span id="display7"></td>
+                <td id = "8" span id="display8"></td>
+            </tr>
+          </div>  
+          <div id="nextMove">Next Move</div>
+        </table>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script>
+  <script src = "viewer.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>

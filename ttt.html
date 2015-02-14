@@ -8,22 +8,26 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   </head>
   <body>
-
+<nav>
+	<div id="innerNav">
+	Tic Tac Toe
+	</div>
+</nav>
     <div id='board'>
 		<div class='row'>
-			<div id="0" class="borderBot borderRight"></div>
-			<div id="1" class="borderBot borderRight borderLeft"></div>
-			<div id="2" class="borderBot borderLeft"></div>
+			<div id="0" class="borderBot borderRight bb"></div>
+			<div id="1" class="borderBot borderRight borderLeft bb"></div>
+			<div id="2" class="borderBot borderLeft bb"></div>
 		</div>
 		<div class='row'>
-			<div id="3" class="borderTop borderRight borderBot"></div>
-			<div id="4" class="borderTop borderRight borderBot borderLeft"></div>
-			<div id="5" class="borderTop borderLeft borderBot"></div>
+			<div id="3" class="borderTop borderRight borderBot bb"></div>
+			<div id="4" class="borderTop borderRight borderBot borderLeft bb"></div>
+			<div id="5" class="borderTop borderLeft borderBot bb"></div>
 		</div>
 		<div class='row'>
-			<div id="6" class="borderTop borderRight"></div>
-			<div id="7" class="borderTop borderLeft borderRight"></div>
-			<div id="8" class="borderTop borderLeft"></div>
+			<div id="6" class="borderTop borderRight bb"></div>
+			<div id="7" class="borderTop borderLeft borderRight bb"></div>
+			<div id="8" class="borderTop borderLeft bb"></div>
 		</div>		
     </div>
     <!-- DOM has to load first, as it is referenced in the 2 js files -->

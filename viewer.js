@@ -12,7 +12,7 @@ var $tableTemplate = $("#tableTemplate"),
 $tableTemplate.hide();
 $nextMove.hide();
 
-var newGame = function() {
+var resetGame = function() {
 
 };
 
@@ -20,6 +20,9 @@ var newGame = function() {
 function displayPrevGame() {
 	$tableTemplate.show().appendTo(".prerecorded");
 	$nextMove.show().appendTo('.prerecorded');
+	 // use .addClass('prerecorded' + i ).appendTo whatever div this way
+	 // you can keep adding games...
+
 };
 
 var buttonHandler = function() {
@@ -62,7 +65,6 @@ function showGameSelected () {
 
 }
 
-
 	myDataRef.on('value', function(snapshot) {
 	console.log("value fired off" + snapshot.val());
 	data = snapshot.val();
@@ -72,6 +74,8 @@ function showGameSelected () {
 			s = '<option value="' + ( gamePicked[i] * 1 ) + '">' + d + '</option>';
 			$select.append(s);
 		}
+		// if $nextMove.innerHTML = done then a game has ended, turn on (this) in 
+		// on line 57 showGame Selected function
 	showGameSelected();
 	});
 

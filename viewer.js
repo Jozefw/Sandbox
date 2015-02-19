@@ -100,7 +100,9 @@ $(function() {
 			} else {
 				console.log('game over');
 				bPreRecordedChosen = false;
-				$nextMove.text('the end').fadeOut('slow');
+				$nextMove.text('the end').fadeOut('slow').fadeIn('slow/400/fast', function() {
+					
+				});;
 			}
 		};
 

@@ -98,9 +98,9 @@ $(function() {
 				showMove( index++ );
 				$nextMove.one( 'click', nextMove );
 			} else {
-				console.log('game over');
+				console.log('Game Over');
 				bPreRecordedChosen = false;
-				$nextMove.text('the end').fadeOut('slow').fadeIn('slow/400/fast', function() {
+				$nextMove.text('The End').fadeOut('slow').fadeIn('slow/400/fast', function() {
 					
 				});;
 			}

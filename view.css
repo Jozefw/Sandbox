@@ -33,13 +33,13 @@ body {
 }
 
 p{
+  color: #7f8c8d;
   border-top: 1px solid black;
   box-shadow: inset 0 1px 0 #443266;
 }
 
 #container{
-  background-color: #8C489F;
-  width: 30%;
+  width: 50%;
   padding: 20px;
   display: inline-block;
 }
@@ -50,7 +50,7 @@ td {
 }
 
 #nextMove{
-  position: absolute;
+  /*position: absolute;*/
   display: none;  
   left: 200px;  
   top: 130px;
@@ -59,9 +59,11 @@ td {
   width: 75px;
   text-align: center;
   padding-top: 5px;
-  border-radius: 5px;
+  border-radius: 15px;
   font-family: helvetica;
-  color: #fff;
+  color: #443266;
+  background-color: #C3C3E5;
+  
 }
 
 #gameSelect{
@@ -69,13 +71,11 @@ td {
 }
 
 #choice {
-   /* position: absolute;*/
+  color: #34495e;
   left: 200px;
   top: 40px;
-  color: white;
   line-height: 1.5em;
- /* display: inline-block;*/
- /* margin: 30px;*/
+ 
 }
 
 #pickedGame{
@@ -83,7 +83,7 @@ td {
 }
 
 table {
-  margin-top: 20px;
+ /* margin-top: 20px;*/
   display: inline-block;
 }
 
@@ -95,8 +95,17 @@ table {
 
 }
 
+#liveGameTable{
+ 
+}
+
+#liveTable{
+  display: inline-block;
+
+}
+
 #liveGameIndicator {
-  position: absolute;
+ /* position: absolute;*/
   display: none;
   left: 200px;
   top: 230px;
@@ -109,6 +118,8 @@ table {
   font-size: .7em;
   text-align: center;
   color: #333;
+  padding: 5px;
+  
 }
 
 /* attach this class to an element to make it unselectable */

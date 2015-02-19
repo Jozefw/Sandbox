@@ -18,7 +18,7 @@
     </nav>
 
     <div id = "container"> 
-	   <div id = "liveGameIndicator"></div>
+	   
        
           <select id="gameSelect">
             <option disabled>Please select a Game Date</option>
@@ -27,8 +27,8 @@
     
         <div id = "choice">You picked Game: <br></div>
         <div id = "boardChoice"></div> 
-     </div>
-
+    
+         <div id="nextMove" class="unselectable">Next Move</div>
         <table id="pickedGame">
             <tr>
                 <td id = "0" span id="display0"></td>
@@ -47,9 +47,11 @@
             </tr>
         </table>
         
-   
+    </div>
+      <div id='liveTable'>
 
-        <table>
+        <table id ='liveGameTable'>
+            <div id = "liveGameIndicator"></div>
             <tr>
                 <td id = "20" ></td>
                 <td id = "21" ></td>
@@ -66,7 +68,8 @@
                 <td id = "28" ></td>
             </tr>
         </table>
-            <div id="nextMove" class="unselectable">Next Move</div>
+    </div>
+           
         <footer>
             <div>
                 
